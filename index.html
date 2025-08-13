@@ -9,6 +9,12 @@
   <meta name="theme-color" content="#0d0d0d" />
   <link rel="icon" href="data:;base64,iVBORw0KGgo=">
   <link rel="stylesheet" href="styles.css" />
+
+  <!-- Inline helper styles for the YouTube embed -->
+  <style>
+    .video-wrapper{position:relative;padding-bottom:56.25%;height:0;overflow:hidden;max-width:100%;background:#000;border-radius:12px;border:1px solid rgba(255,255,255,.1)}
+    .video-wrapper iframe{position:absolute;top:0;left:0;width:100%;height:100%}
+  </style>
 </head>
 <body>
   <!-- Loader -->
@@ -28,6 +34,7 @@
 
       <ul class="nav-links">
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#youtube">YouTube</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#about">About</a></li>
         <li><a class="btn" href="#contact">Contact</a></li>
@@ -69,7 +76,7 @@
         <div class="grid cards" id="projectGrid">
           <!-- Card 1 -->
           <article class="card" data-tags="Building, Music">
-            <div class="thumb"><img src="https://tr.rbxcdn.com/180DAY-d0ea301d67632ac419815c6a32900ef1/352/352/Image/Png/noFilter" alt="Cyber Ruins arena screenshot"></div>
+            <div class="thumb"><img src="https://tr.rbxcdn.com/180DAY-d0ea301d67632ac419815c6a32900ef1/352/352/Image/Png/noFilter" alt="The Ascent screenshot"></div>
             <div class="card-body">
               <h3>The Ascent.</h3>
               <p>just hooks and ropes (there will be more levels).</p>
@@ -82,7 +89,7 @@
 
           <!-- Card 2 -->
           <article class="card" data-tags="Design,Story,Building">
-            <div class="thumb"><img src="https://tr.rbxcdn.com/180DAY-6789b71cb0a1dd07b02272fd0fb2124e/352/352/Image/Png/noFilter" alt="Cyber Ruins arena screenshot"></div>
+            <div class="thumb"><img src="https://tr.rbxcdn.com/180DAY-6789b71cb0a1dd07b02272fd0fb2124e/352/352/Image/Png/noFilter" alt="Untitled Maze Game screenshot"></div>
             <div class="card-body">
               <h3>Untitled Maze Game.</h3>
               <p>Can you make it to the end? In this game, you have to go through a series of 6 Labyrinths; two have monsters. Can you beat it, or will you fail like the rest?</p>
@@ -95,7 +102,7 @@
 
           <!-- Card 3 -->
           <article class="card" data-tags="Music,UI,Design">
-           <div class="thumb"><img src="https://tr.rbxcdn.com/180DAY-0e6c19589700ce91b17cdb237167bfdc/352/352/Image/Png/noFilter" alt="Cyber Ruins arena screenshot"></div>
+           <div class="thumb"><img src="https://tr.rbxcdn.com/180DAY-0e6c19589700ce91b17cdb237167bfdc/352/352/Image/Png/noFilter" alt="Another Clicker Game screenshot"></div>
             <div class="card-body">
               <h3>Another Clicker Game</h3>
               <p>Boss room iteration; diegetic UI and sting-based score.</p>
@@ -105,6 +112,27 @@
               <a class="link" href="https://www.roblox.com/games/84931904667320/Another-Clicker-Game" target="_blank" rel="noopener">Open project ↗</a>
             </div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- YouTube -->
+    <section id="youtube" class="section">
+      <div class="container">
+        <header class="section-head"><h2>YouTube</h2></header>
+        <p class="subtle" style="margin-top:-6px;margin-bottom:12px;">
+          Channel: <a class="link" href="https://www.youtube.com/@THE-REAPERS-MIND" target="_blank" rel="noopener">@THE-REAPERS-MIND</a>
+        </p>
+        <div class="video-wrapper">
+          <!-- This shows your channel's uploads as a playlist. If it doesn't load, we can swap in your channel's Uploads playlist ID. -->
+          <iframe
+            src="https://www.youtube.com/embed?listType=user_uploads&list=THE-REAPERS-MIND"
+            title="The Reaper's Mind — Latest Uploads"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
     </section>
@@ -204,9 +232,7 @@
             <h3>Links</h3>
             <ul class="links">
               <li><a class="link" href="https://www.roblox.com/users/3243162401/profile" target="_blank" rel="noopener">Roblox Profile</a></li>
-              
               <li><a class="link" href="https://www.youtube.com/@THE-REAPERS-MIND" target="_blank" rel="noopener">YouTube</a></li>
-              
               <li><a class="link" href="https://discord.gg/pZagA4gBPm" target="_blank" rel="noopener">Discord</a></li>
             </ul>
             <p class="subtle">Email: <span class="mono">reaperssinc@gmail.com</span></p>
