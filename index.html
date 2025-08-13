@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Reaper | Roblox Portfolio</title>
+  <meta name="description" content="Roblox Game Designer • UI • Builder • Composer • Storyteller" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="theme-color" content="#0d0d0d" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader" aria-hidden="true">
+    <div class="spinner" role="status" aria-label="Loading"></div>
+    <h1>Loading Reaper’s World…</h1>
+  </div>
+
+  <!-- Header / Navbar -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main">
+      <a href="#hero" class="brand">REAPER</a>
+
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a class="btn" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="app">
+    <!-- Hero -->
+    <section id="hero" class="hero section">
+      <div class="container tc">
+        <h1>I build worlds, score their sound, and tell their stories.</h1>
+        <p>Roblox Game Designer • Intermediate UI &amp; Builder • Composer • Storyteller</p>
+        <div class="hero-cta">
+          <a class="btn" href="#projects">See My Work</a>
+          <a class="btn-ghost" href="#about">About Me</a>
+        </div>
+      </div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2>Projects</h2>
+          <p>Filter by role to see relevant work.</p>
+        </header>
+
+        <div class="filters" role="tablist" aria-label="Project filters">
+          <button class="chip active" data-filter="All" role="tab" aria-selected="true">All</button>
+          <button class="chip" data-filter="UI" role="tab">UI</button>
+          <button class="chip" data-filter="Building" role="tab">Building</button>
+          <button class="chip" data-filter="Music" role="tab">Music</button>
+          <button class="chip" data-filter="Design" role="tab">Design</button>
+          <button class="chip" data-filter="Story" role="tab">Story</button>
+        </div>
+
+        <div class="grid cards" id="projectGrid">
+          <!-- Card 1 -->
+          <article class="card" data-tags="UI,Building,Music,Design">
+            <div class="thumb"><span>No thumbnail yet</span></div>
+            <div class="card-body">
+              <h3>Cyber Ruins</h3>
+              <p>Neon arena prototype. I handled UI, level dressing, and a 30s music loop.</p>
+              <div class="tags">
+                <span>UI</span><span>Building</span><span>Music</span><span>Design</span>
+              </div>
+              <!-- Example link: <a class="link" href="#" target="_blank" rel="noopener">Open project ↗</a> -->
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card" data-tags="Design,Story,Building">
+            <div class="thumb"><span>No thumbnail yet</span></div>
+            <div class="card-body">
+              <h3>EchoBound Tests</h3>
+              <p>Small encounter spaces with adaptive music and lore terminals.</p>
+              <div class="tags">
+                <span>Design</span><span>Story</span><span>Building</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card" data-tags="Music,UI,Design">
+            <div class="thumb"><span>No thumbnail yet</span></div>
+            <div class="card-body">
+              <h3>Warden’s Trial</h3>
+              <p>Boss room iteration; diegetic UI and sting-based score.</p>
+              <div class="tags">
+                <span>Music</span><span>UI</span><span>Design</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+      <div class="container">
+        <header class="section-head"><h2>Skills</h2></header>
+
+        <div class="grid skills">
+          <div class="skill glass">
+            <h3>UI Design</h3>
+            <p>Clean, readable, diegetic UI</p>
+            <div class="bar"><span style="width:60%"></span></div>
+          </div>
+          <div class="skill glass">
+            <h3>Building</h3>
+            <p>Layout, dressing, lighting passes</p>
+            <div class="bar"><span style="width:60%"></span></div>
+          </div>
+          <div class="skill glass">
+            <h3>Composer</h3>
+            <p>30–60s loops, stings, hits</p>
+            <div class="bar"><span style="width:80%"></span></div>
+          </div>
+          <div class="skill glass">
+            <h3>Game Design</h3>
+            <p>Mechanics, balance, encounter flow</p>
+            <div class="bar"><span style="width:80%"></span></div>
+          </div>
+          <div class="skill glass">
+            <h3>Storytelling</h3>
+            <p>Lore shards, world tone, NPC voice</p>
+            <div class="bar"><span style="width:100%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-head"><h2>About</h2></header>
+        <div class="grid two">
+          <div class="glass content">
+            <p>
+              I’m Reaper. Intermediate at UI and Building, Composer, Game Designer, and a storyteller who ships.  
+              I like clean interfaces, readable feedback, and levels that teach by doing.
+            </p>
+            <ul>
+              <li>Tooling: Roblox Studio, VS Code, Git, Figma/BandLab</li>
+              <li>Music: short loops, stingers, impact hits</li>
+              <li>Dev Style: small iterations, strong polish passes</li>
+            </ul>
+          </div>
+          <div class="glass content">
+            <h3>Process</h3>
+            <ol class="process">
+              <li><strong>1) Concept</strong> — goal, verbs, mood</li>
+              <li><strong>2) Build</strong> — blockout, temp UI/audio</li>
+              <li><strong>3) Polish</strong> — readability, timing, juice</li>
+              <li><strong>4) Launch</strong> — test, iterate, ship</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <header class="section-head"><h2>Contact</h2></header>
+
+        <div class="grid two">
+          <!-- Works on Netlify if hosted there; otherwise it gracefully submits normally -->
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="glass form">
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+
+            <label>
+              <span>Name</span>
+              <input name="name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="5" required></textarea>
+            </label>
+
+            <button class="btn" type="submit">Send</button>
+          </form>
+
+          <div class="glass content">
+            <h3>Links</h3>
+            <ul class="links">
+              <li><a class="link" href="https://www.roblox.com/users/profile" target="_blank" rel="noopener">Roblox Profile</a></li>
+              <li><a class="link" href="https://github.com/" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a class="link" href="https://www.youtube.com/" target="_blank" rel="noopener">YouTube</a></li>
+              <li><a class="link" href="https://soundcloud.com/" target="_blank" rel="noopener">Sound</a></li>
+              <li><a class="link" href="https://discord.gg/" target="_blank" rel="noopener">Discord</a></li>
+            </ul>
+            <p class="subtle">Email: <span class="mono">deathbound.reaper@gmail.com</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Reaper. Forged without frameworks.</p>
+      <button id="loreBtn" class="link" aria-expanded="false">☠️ Lore</button>
+    </div>
+    <div id="lore" class="lore hidden" role="region" aria-live="polite">
+      <p><strong>Marrow’s Note:</strong> Beneath the hub, the engines hum. Lantern’s Ash, Echoes Endure.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
