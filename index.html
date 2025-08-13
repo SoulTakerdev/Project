@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reaper | Roblox Portfolio</title>
+    <meta name="description" content="Roblox Game Designer • UI • Builder • Composer • Storyteller." />
+    <meta name="theme-color" content="#0d0d0d" />
+    <meta name="color-scheme" content="dark" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      html,body{margin:0;background:#0d0d0d;color:#f5f5f5;font-family:'Inter',system-ui,sans-serif}
+      #loader{position:fixed;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(circle at center,#111,#000);z-index:9999}
+      #loader h1{font-family:'Orbitron',sans-serif;font-size:1.1rem;color:#ef4444;letter-spacing:.12em;margin-top:1rem}
+      .spinner{width:40px;height:40px;border:3px solid rgba(255,255,255,.2);border-top:3px solid #ef4444;border-radius:50%;animation:spin 1s linear infinite}
+      @keyframes spin{to{transform:rotate(360deg)}}
+    </style>
+  </head>
+  <body>
+    <div id="loader"><div class="spinner"></div><h1>Loading Reaper's World…</h1></div>
+    <div id="root" style="opacity:0;transition:opacity .6s ease;"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
